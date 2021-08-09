@@ -3,11 +3,11 @@
 @import url("https://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css");
 @import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
 html {
-  font-family: 'Signika', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: #00C993;
+  background: #8486ff;
   position: absolute;
   display: block;
   width: 100%;
@@ -114,9 +114,9 @@ band2 h2 {
 }
 
 #video-display {
-  background: #DDD7D1;
+  background: #ddd7d1;
   border-radius: 30px;
-  box-shadow: 0 0.5em 0 #BCB1A5;
+  box-shadow: 0 0.5em 0 #bcb1a5;
   padding: 50px 18px 50px 18px;
   width: 20%;
   min-width: 200px;
@@ -135,7 +135,7 @@ band2 h2 {
 }
 
 #topBar {
-  background: #00C993;
+  background: #00c993;
   height: 10%;
   overflow: hidden;
   padding-left: 10px;
@@ -146,7 +146,7 @@ band2 h2 {
 
 #mc_embed_signup {
   text-align: right;
-  background-color: #00C993;
+  background-color: #8486ff;
 }
 
 #mce-EMAIL {
@@ -172,15 +172,16 @@ band2 h2 {
 }
 
 .icon-bookmark:hover {
-  color: #FFC52F;
+  color: #ffc52f;
 }
 
 .pressed {
-  color: #FFC52F;
+  color: #ffc52f;
 }
 
-h1, h3 {
-  font-family: 'Signika', sans-serif;
+h1,
+h3 {
+  font-family: "Signika", sans-serif;
   font-weight: 700;
   text-align: center;
 }
@@ -196,13 +197,13 @@ a {
 }
 
 .button {
-  background: #DDD7D1;
+  background: #ddd7d1;
   text-align: center;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   color: white;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 0.2em 0 #BCB1A5;
+  box-shadow: 0 0.2em 0 #bcb1a5;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   /*transition cross-browser stuff*/
@@ -214,7 +215,7 @@ a {
 }
 
 .button:hover {
-  background: #BCB1A5;
+  background: #bcb1a5;
 }
 
 a.arrow {
@@ -232,7 +233,7 @@ a.arrow {
 }
 
 a.arrow:hover {
-  color: #FFC52F;
+  color: #ffc52f;
 }
 
 @media only screen and (min-width: 767px) {
@@ -248,7 +249,7 @@ a.arrow:hover {
     /*52 / 16*/
   }
   a.button {
-    padding: .75em 1.5em;
+    padding: 0.75em 1.5em;
   }
 }
 
