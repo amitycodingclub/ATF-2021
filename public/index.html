@@ -1,87 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- meta data -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Title -->
-  <title>AmiTechFiesta2021</title>
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
-  <!-- style files -->
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="../src/style/css/swiper-bundle.min.css">
+
+  <!--==================== CSS ====================-->
   <link rel="stylesheet" href="../src/style/css/style.css">
 
-  <!-- javascript files -->
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
-          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer" 
-    />
+  <title>AmiTechFiesta2021</title>
 </head>
 
-<body">
-  <!--===================================
-                  Intro
-  =====================================-->
-      <section id="intro">
-        <div class="container"
-              id="skrollr-body" 
-              data-0="background-color:rgb(132, 134, 255);" 
-              data-400="background-color:rgb(164,167,171);" 
-              data-1000="background-color:rgb(164,167,171);" 
-              data-1300="background-color:rgb(132, 134, 255);"
-        >
-        <div>
-          <img src="images/ACC logo.png" width="12%">
-        </div>
-          <h5 style="line-height: 0%;"><i>presents</i></h5>
-          <img src="images/ATF21'.png" width="15%">
-          <h1>AmiTechFiesta21'</h1>
-          <p style="color:#3558b8;">An exceptional experience every time</p>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">LOGO</a>
 
-          <a class="arrow" href="#anchor1"><i class="icon-sort-down"></i></a>
-          </p>
-        </div>
-      </section>
+        <!-- <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class="uil uil-estate nav__icon"></i> Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#event" class="nav__link">
+                        <i class="uil nav__icon uil-user"></i> event
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="uil nav__icon uil-file-alt"></i> Skills
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">
+                        <i class="uil nav__icon uil-briefcase-alt"></i> Services
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="uil nav__icon uil-scenery"></i> Portfolio
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#register" class="nav__link">
+                        <i class="uil nav__icon uil-message"></i> registerme
+                    </a>
+                </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div> -->
 
-  <!--===================================
-                  About Section
-  =====================================-->
-    <section id="video" class="section"></section>
-        <div class="anchor" id="anchor1"></div>
-        <div id="hiddenIcon">
-        <i class="icon-mobile-video-display"></i>
+        <div class="nav__btns">
+            <!-- Theme change button -->
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
             </div>
-        <div class="rainbow" id="video-display" 
-              data-0="margin-left: -20%; opacity:0" 
-              data-350="margin-left: 10%; opacity:1"
-        >
-            <img src="../public/images/logo.png" alt="" width="200" height="auto">
-        </div><!--/ video-display-->
-      <div class="explanation" data-300="opacity: 0" data-350="opacity: 1">
-      <h2>Right where you are</h2>
-        <p>Play at home, while you eat, while you poop, and while you walk. Actually, better to look at the street while you walk.</p>
-        <a class="arrow" href="#anchor2"><i class="icon-sort-down"></i></a>
-        </div><!--/ explanation-->
-      </div><!--/ about-->
-      
-      <section id="about"></section>
-        <div class="section" id="sect2">
-          <div class="anchor" id="anchor2"></div>
-          <div id="hiddenIcon"><i class="icon-twitter"></i></div>
-          <div  id="twitter"  
-                data-600="margin-top: -20%; opacity: 0" 
-                data-1000="margin-top: 0; opacity:1"
-          >
-            <i class="icon-twitter"></i>
-          </div>
-          <div class="explanation" data-850=" opacity: 0" data-900=" opacity:1">
-          <h2>About</h2>
-          <p>I don't think you'll ever get to my score. But you can try anyway. Looser. </p>
-          <a class="arrow" href="#anchor3"><i class="icon-sort-down"></i></a>
-        </div><!--/ explanation-->
-      </div><!--sect2-->
+        </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================--> 
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/amity-coding-club-551080218/" target="_blank" class="home__social-icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amitycoding/" target="_blank" class="home__social-icon">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://www.github.com" target="_blank" class="home__social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+
+                <!-- <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                            <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div> -->
+                
+                <div class="home__data">
+                    <h1 class="home__title">AmiTechFiesta</h1>
+                    <h3 class="home__subtitle">2021</h3>
+                    <p class="home__description">
+                        We learn, We create, We grow
+                    </p>
+                    <a href="#register" class="button button--flex">
+                        Register Here <i class="uil uil-arrow-circle-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#event" class="home__scroll-button button--flex">
+                    <div class="home__scroll-mouse">
+                        <div class="home__scroll-scroller"></div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <span class="home__scroll-name">Scroll down</span>
+                    <!-- <i class="uil uil-arrow-down home__scroll-arrow"></i> -->
+                </a>
+            </div>
+        </div>
+    </section>
+ 
+    <!--==================== EVENT ====================-->
+    <section class="event section" id="event">
+        <h2 class="section__title">Events</h2>
+        <span class="section__subtitle">2021</span>
+
+        <div class="event__container container grid">
+            <video class="event__video" controls autoplay>
+                <source src="./assets/video/Zoom.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="event__data">
+                <p class="event__description">AmiTechFiesta is the worlds largest and most fabulous 
+                    event to improve your skills in different fields. You will never experience this much
+                    fun anywhere else.
+                    <br>
+                    <br>
+                    Heeee haaaa !!!
+                </p>
+
+                <div class="event__info">
+                    <div>
+                        <span class="event__info-title">08+</span>
+                        <span class="event__info-name">Companies</span>
+                    </div>
+
+                    <div>
+                        <span class="event__info-title">20+</span>
+                        <span class="event__info-name">Colleges</span>
+                    </div>
+
+                    <div>
+                        <span class="event__info-title">500+</span>
+                        <span class="event__info-name">Events</span>
+                    </div>
+                </div>
+
+                <div class="event__buttons">
+                    <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                        Register Now<i class="uil uil-smile button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     
   <!--===================================
                   Form Section
@@ -119,13 +217,10 @@
       </div>
     </div><!--/ band-->
     
-  <!--===================================
-                  Javascript Files
-  =====================================-->
-    <script src="https://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js"></script>
+    <!--==================== SWIPER JS ====================-->
+    <script src="../src/lib/swiper-bundle.min.js"></script>
 
-    <!-- skrollr library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../src/lib/slide_effect.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="../src/lib/main.js"></script>
 </body>
 </html>
