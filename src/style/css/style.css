@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
@@ -25,6 +25,7 @@
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
+    --rounds-heading-font: "Montserrat", sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -49,7 +50,14 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-
+    --mb-3-5: 3.5rem;
+    --mb-4: 4rem;
+    --mb-4-5: 4.5rem;
+    --mb-5: 5rem;
+    --mb-5-5: 5.5rem;
+    --mb-6: 6rem;
+    --mb-6-5: 6.5rem;
+    
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -481,129 +489,70 @@ img {
     justify-content: center;
 }
 
-/*==================== SKILLS ====================*/
-.skills__container {
-    row-gap: 0;
+/*==================== ROUNDS ====================*/
+.rounds__container {
+    margin-bottom: var(--mb-6-5);
 }
 
-.skills__header {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--mb-2-5);
-    cursor: pointer;
-}
-
-.skills__icon,
-.skills__arrow {
-    font-size: 2rem;
-    color: var(--first-color);
-}
-
-.skills__icon {
-    margin-right: var(--mb-0-75);
-}
-
-.skills__title {
-    font-size: var(--h3-font-size);
-}
-
-.skills__subtitle {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-}
-
-.skills__arrow {
-    margin-left: auto;
-    transition: 0.4s;
-}
-
-.skills__list {
-    row-gap: 1.5rem;
-    padding-left: 2.7rem;
-}
-
-.skills__titles {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
-}
-
-.skills__name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage {
-    height: 5px;
-    border-radius: 0.25rem;
-}
-
-.skills__bar {
-    background-color: var(--first-color-lighter);
-}
-
-.skills__percentage {
+.rounds__title {
     display: block;
-    background-color: var(--first-color);
+    margin-bottom: var(--mb-2);
+    letter-spacing: 0.1rem;
+    position: relative;
 }
 
-.skills__html {
-    width: 90%;
+.rounds__title::before {
+    content: attr(data-num);
+    font-family: var(--rounds-heading-font);
+    font-weight: 600;
+    font-size: calc(var(--h3-font-size) * 5);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    opacity: .1;
 }
 
-.skills__css {
-    width: 80%;
+.rounds__title h3 {
+    z-index: 2;
+    font-weight: 500;
+    color: var(--color-1);
+    padding-bottom: 2em;
+    margin-top: 0;
+    position: absolute;
+    left: 1em;
+    bottom: 0;
 }
 
-.skills__js {
-    width: 60%;
-}
-
-.skills__react {
-    width: 85%;
-}
-
-.skills__php {
-    width: 80%;
-}
-
-.skills__node {
-    width: 70%;
-}
-
-.skills__firebase {
-    width: 90%;
-}
-
-.skills__python {
-    width: 55px;
-}
-
-.skills__figma {
-    width: 90%;
-}
-
-.skills__sketch {
-    width: 85%;
-}
-
-.skills__photoshop {
-    width: 85%;
-}
-
-.skills__close .skills__list {
-    height: 0;
+.rounds__images {
     overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.skills__open .skills__list {
-    height: max-content;
+.rounds__img {
+    width: 100%;
+    transition: all 2s;
+}
+
+.rounds__img:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);   
+    -moz-transform: scale(1.5);
+    transform: scale(1.5); 
+}
+
+.rounds__heading {
+    font-size: var(--h1-font-size);
+    font-weight: 500;
+    line-height: var(--mb-4-5);
+    margin-top: 0;
+}
+
+.rounds__description {
+    justify-content: center;
     margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow {
-    transform: rotate(-180deg);
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -1135,7 +1084,7 @@ img {
     }
 
     .event__container,
-    .skills__container,
+    .rounds__container,
     .portfolio__content,
     .project__container,
     .contact__container,
