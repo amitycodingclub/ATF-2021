@@ -118,7 +118,8 @@ html {
 }
 
 body {
-    background: url("../../../public/assets/images/background.svg");
+    background: url("../../../public/assets/images/background/ATF21_BG_NIGHT.svg");
+    background-size: 80rem;
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -185,7 +186,7 @@ img {
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: transparent;
 }
 
 /*==================== NAV ====================*/
@@ -512,7 +513,7 @@ img {
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--color-text);
-    opacity: .1;
+    opacity: .2;
 }
 
 .rounds__title h3 {
@@ -745,7 +746,13 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
+    body {
+        margin: 0;
+        background-size: 35rem;
+        background-position-x: 10px;
+    }
+
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
