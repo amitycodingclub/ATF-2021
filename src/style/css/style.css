@@ -575,12 +575,12 @@ img {
     height: 80px;
     border-radius: 50%;
     justify-self: center;
-    margin-bottom: var(--mb-1);
+    /* margin-bottom: var(--mb-1); */
 }
 
-.testimonial__data, .testimonial__header {
+/* .testimonial__data, .testimonial__header {
     margin-bottom: var(--mb-1);
-}
+} */
 
 .testimonial__client {
     font-size: var(--small-font-size);
@@ -595,7 +595,36 @@ img {
     bottom: 0;
 }
 
-/*==================== register ME ====================*/
+/*==================== TESTIMONIAL ====================*/
+.sponsors__img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: var(--mb-1);
+}
+
+.sponsors__data, .sponsors__header {
+    margin-bottom: var(--mb-1);
+}
+
+.sponsors__header {
+    opacity: .5;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.sponsors__header:hover, .sponsors__header:focus {
+    opacity: 1;
+}
+
+.swiper-wrapper {
+    margin-bottom: var(--mb-2);
+}
+
+.swiper-container {
+    bottom: 0;
+}
+
+/*==================== REGISTER ====================*/
 .register__container {
     row-gap: 3rem;
 }
@@ -648,55 +677,19 @@ img {
     padding-top: 1rem;
 }
 
-.footer__container {
-    row-gap: 1.5rem;
-}
-
-.footer__bg {
-    background-color: var(--first-color-second);
-    padding: 2rem 0rem 3rem;
-}
-
 .footer__title {
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-0-25);
-}
-
-.footer__subtitle {
-    font-size: var(--small-font-size);
-}
-
-.footer__links {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-}
-
-.footer__link:hover {
-    color: var(--first-color-lighter);
-}
-
-.footer__social {
-    font-size: 1.6rem;
-    margin-right: var(--mb-1-5);
-}
-
-.footer__social:hover {
-    color: var(--first-color-lighter);
-}
-
-.footer__copy {
-    font-size: var(--smaller-font-size);
-    text-align: center;
+    font-size: var(--normal-font-size);
     color: var(--text-color-light);
-    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-0-25);
+    text-align: center;
 }
 
-.footer__title,
-.footer__subtitle,
-.footer__link,
-.footer__social {
-    color: #fff;
+.footer__title span {
+    color: red;
+}
+
+.footer__title a {
+    color: var(--text-color-light);
 }
 
 /*========== SCROLL UP ==========*/
@@ -810,9 +803,7 @@ img {
     }
 
     .event__container,
-    .rounds__container,
-    .register__container,
-    .footer__container {
+    .rounds__container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -841,8 +832,7 @@ img {
     }
 
     .header,
-    .main,
-    .footer__container {
+    .main {
         padding: 0 1rem;
     }
 
@@ -911,27 +901,6 @@ img {
 
     .event__buttons {
         justify-content: initial;
-    }
-
-    .footer__container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .footer__bg {
-        padding: 2rem 0 1rem;
-    }
-
-    .footer__links {
-        flex-direction: row;
-        column-gap: 2rem;
-    }
-
-    .footer__socials {
-        justify-self: flex-end;
-    }
-
-    .footer__copy {
-        margin-top: 4.5rem;
     }
 }
 
