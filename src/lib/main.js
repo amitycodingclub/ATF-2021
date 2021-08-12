@@ -49,70 +49,13 @@ skillsHeader.forEach((el) => {
     el.addEventListener("click", toggleSkills);
 });
 
-/*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll("[data-target]");
-const tabContents = document.querySelectorAll("[data-content]");
-
-tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-        const target = document.querySelector(tab.dataset.target);
-
-        tabContents.forEach((tabContent) => {
-            tabContent.classList.remove("qualification__active");
-        });
-        target.classList.add("qualification__active");
-
-        tabs.forEach((tab) => {
-            tab.classList.remove("qualification__active");
-        });
-        tab.classList.add("qualification__active");
-    });
-});
-
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll(".services__modal");
-const modalBtns = document.querySelectorAll(".services__button");
-const modalCloses = document.querySelectorAll(".services__modal-close");
-
-let modal = function (modalClick) {
-    modalViews[modalClick].classList.add("active-modal");
-};
-
-modalBtns.forEach((modalBtn, index) => {
-    modalBtn.addEventListener("click", () => {
-        modal(index);
-    });
-});
-
-modalCloses.forEach((modalClose, index) => {
-    modalClose.addEventListener("click", () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove("active-modal");
-        });
-    });
-});
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-var swiperPortfolio = new Swiper(".portfolio__container", {
-    cssMode: true,
-    loop: true,
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
 /*==================== TESTIMONIAL ====================*/
 var swiperTestimonial = new Swiper(".testimonial__container", {
     loop: true,
+    speed: 1000,
     // grabCursor: true,
     // slidesPerView: true,
-    spaceBetween: 48,
+    spaceBetween: 30,
     autoHeight: true,
     autoplay: {
         delay: 2500,
@@ -125,10 +68,34 @@ var swiperTestimonial = new Swiper(".testimonial__container", {
     },
     breakpoints: {
         568: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 2,
+        }
+    },
+});
+
+/*==================== SPONSORS ====================*/
+var swiperTestimonial = new Swiper(".sponsors__container", {
+    // cssMode: true,
+    // mode:'horizontal',
+    // freeMode: true,
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+        reverseDirection: true,
+        delay: 1000,
+        disableOnInteraction: false,
+        stopOnLastSlide: false,
+    },
+    speed: 1000,
+    breakpoints: {
+        568: {
             slidesPerView: 3,
         },
         1024: {
-            slidesPerView: 1,
+            slidesPerView: 4,
         }
     },
 });
