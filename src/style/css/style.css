@@ -1288,7 +1288,7 @@ img {
         grid-template-columns: 0.6fr;
         justify-content: center;
     }
-=======
+    
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
