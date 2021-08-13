@@ -120,6 +120,8 @@ html {
 body {
     background: url("../../../public/assets/images/background/ATF21_BG_NIGHT.svg");
     background-size: 80rem;
+    background-position-x: 11rem;
+    background-position-y: -1rem;
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -188,6 +190,9 @@ img {
     z-index: var(--z-fixed);
     background-color: transparent;
 }
+
+/*==================== SVG ====================*/
+
 
 /*==================== NAV ====================*/
 .nav {
@@ -284,6 +289,7 @@ img {
 /*==================== HOME ====================*/
 .home__container {
     gap: 1rem;
+    margin-top: -6rem;
 }
 
 .home__content {
@@ -337,6 +343,7 @@ img {
 
 .home__scroll {
     display: none;
+    margin-top: -5rem;
 }
 
 .home__scroll-button {
@@ -747,9 +754,9 @@ img {
     }
 
     .home__img {
-        width: 300px;
+        width: 400px;
         height: auto;
-        margin-top: -9rem;
+        margin-top: 1rem;
         order: 1;
         justify-self: center;
     }
