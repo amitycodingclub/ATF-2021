@@ -96,12 +96,13 @@
         <span class="section__subtitle">2021</span>
 
         <div class="event__container container grid">
-            <video class="event__video" controls autoplay muted>
-                <source src="./assets/video/ATF21video.mp4" type="video/mp4">
-                <!-- <source src="movie.ogg" type="video/ogg"> -->
-                Your browser does not support the video tag.
-            </video>
-
+            <div class="event__video">
+                <video autoplay muted>
+                    <source src="./assets/video/ATF21video.mp4" type="video/mp4">
+                    <!-- <source src="movie.ogg" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div class="event__data">
                 <p class="event__description">AmiTechFiesta is the worlds largest and most fabulous 
                     event to improve your skills in different fields. You will never experience this much
@@ -125,12 +126,12 @@
                     <!-- <div>
                         <span class="event__info-title">500+</span>
                         <span class="event__info-name">Events</span>
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
 
                 <div class="event__buttons">
-                    <a href="#form" class="button button--flex">
-                        Register Now <i class="uil uil-smile button__icon"></i>
+                    <a href="#rounds" class="button button--flex">
+                        Explore <i class="uil uil-angle-down button__icon"></i>
                     </a>
                 </div>
             </div>
@@ -153,7 +154,7 @@
                     <img src="./assets/images/rounds/brain_hunt.svg" alt="" class="rounds__img">
                 </div>
     
-                <div >
+                <div>
                     <h1 class="rounds__heading">
                         Brain Hunt
                     </h1>
@@ -345,7 +346,11 @@
     <!--==================== SWIPER JS ====================-->
     <script src="../src/lib/swiper-bundle.min.js"></script>
 
+    <!--==================== GSAP JS ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!--==================== MAIN JS ====================-->
     <script src="../src/lib/main.js"></script>
+    <script src="../src/lib/animation.js"></script>
 </body>
 </html>

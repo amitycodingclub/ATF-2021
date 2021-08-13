@@ -29,25 +29,12 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName("skills__content");
-const skillsHeader = document.querySelectorAll(".skills__header");
+/*==================== VIDEO POPUP ====================*/
+var video = document.querySelectorAll("video");
 
-function toggleSkills() {
-    let itemClass = this.parentNode.className;
-
-    for (i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = "skills__content skills__close";
-    }
-
-    if (itemClass === "skills__content skills__close") {
-        this.parentNode.className = "skills__content skills__open";
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener("click", toggleSkills);
-});
+video.forEach(play => play.addEventListener('click', () => {
+    play.classList.toggle('active')
+}));
 
 /*==================== TESTIMONIAL ====================*/
 var swiperTestimonial = new Swiper(".testimonial__container", {
