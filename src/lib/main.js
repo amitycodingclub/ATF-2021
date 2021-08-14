@@ -1,41 +1,3 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById("nav-menu");
-const navToggle = document.getElementById("nav-toggle");
-const navClose = document.getElementById("nav-close");
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if (navToggle) {
-    navToggle.addEventListener("click", () => {
-        navMenu.classList.add("show-menu");
-    });
-}
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if (navClose) {
-    navClose.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu");
-    });
-}
-
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll(".nav__link");
-
-function linkAction() {
-    const navMenu = document.getElementById("nav-menu");
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove("show-menu");
-}
-navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-/*==================== VIDEO POPUP ====================*/
-var video = document.querySelectorAll("video");
-
-video.forEach(play => play.addEventListener('click', () => {
-    play.classList.toggle('active')
-}));
-
 /*==================== TESTIMONIAL ====================*/
 var swiperTestimonial = new Swiper(".testimonial__container", {
     loop: true,
@@ -58,7 +20,7 @@ var swiperTestimonial = new Swiper(".testimonial__container", {
             slidesPerView: 2,
         },
         1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         }
     },
 });
@@ -86,30 +48,6 @@ var swiperTestimonial = new Swiper(".sponsors__container", {
         }
     },
 });
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll("section[id]");
-
-function scrollActive() {
-    const scrollY = window.pageYOffset;
-
-    sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute("id");
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document
-                .querySelector(".nav__menu a[href*=" + sectionId + "]")
-                .classList.add("active-link");
-        } else {
-            document
-                .querySelector(".nav__menu a[href*=" + sectionId + "]")
-                .classList.remove("active-link");
-        }
-    });
-}
-window.addEventListener("scroll", scrollActive);
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
@@ -163,4 +101,21 @@ themeButton.addEventListener("click", () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem("selected-theme", getCurrentTheme());
     localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+// /*==================== GSAP REVEAL ANIMATION ====================*/
+// gsap.from('.home__img', {opacity: 0, duration: 2, delay: .6, x:100})
+// gsap.from('.home__data', {opacity: 0, duration: 2, delay: .8, y:25})
+// gsap.from('.home__title , .home__data h2, .home__description, .home__button', {opacity: 0, duration: 2, delay: 1, y:25, ease: 'expo.out', stagger: 0.2})
+// gsap.from('.nav__logo , .nav__btns', {opacity: 0, duration: 2, delay: 1.5, y:25, ease: 'expo.out', stagger: 0.2})
+// gsap.from('.home__social-icon', {opacity: 0, duration: 2, delay: 2.3, y:25, ease: 'expo.out', stagger: 0.2})
+
+// /*==================== AOS ANIMATION ====================*/
+AOS.init( {
+    offset: 100,
+    duration: 600,
+    easing: 'ease-in-out',
+    delay: 300,
+    // once: true,
+    disable: 'mobile'
 });
