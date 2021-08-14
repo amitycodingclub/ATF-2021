@@ -25,7 +25,7 @@
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
-    --rounds-heading-font: "Montserrat", sans-serif;
+    --heading-font: "Montserrat", sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -93,6 +93,7 @@ body.dark-theme {
 .nav__btns {
   display: flex;
   align-items: center;
+  box-shadow: none;
 }
 
 .change-theme {
@@ -189,7 +190,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: var(--body-color);
 }
 
 /*==================== SVG ====================*/
@@ -483,6 +484,7 @@ img {
 
 .event__description {
   margin-bottom: var(--mb-2-5);
+  font-size: var(--h3-font-size);
 }
 
 .event__info {
@@ -510,17 +512,14 @@ img {
 
 .event__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 1rem;
 }
 
 /*==================== ROUNDS ====================*/
 .rounds__container {
   margin-bottom: var(--mb-6-5);
 }
-
-/* .rounds__container:nth-child() img {
-    order: 2;
-} */
 
 .rounds__title {
   display: block;
@@ -531,7 +530,7 @@ img {
 
 .rounds__title::before {
   content: attr(data-num);
-  font-family: var(--rounds-heading-font);
+  font-family: var(--heading-font);
   font-weight: 600;
   font-size: calc(var(--h3-font-size) * 5);
   line-height: 1;
@@ -898,13 +897,5 @@ img {
 
   .home__social {
     transform: translateX(-6rem);
-  }
-
-  .register__form {
-    width: 460px;
-  }
-
-  .register__inputs {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
