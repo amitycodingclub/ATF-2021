@@ -16,6 +16,9 @@
 
   <!--==================== SWIPER CSS ====================-->
   <link rel="stylesheet" href="../src/style/css/swiper-bundle.min.css">
+  
+  <!--==================== AOS ====================-->
+  <link rel="stylesheet" href="../src/style/css/aos.css">
 
   <!--==================== CSS ====================-->
   <link rel="stylesheet" href="../src/style/css/style.css">
@@ -27,17 +30,13 @@
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
-        <a href="https://accmp.co.in" class="nav__logo">
+        <a href="https://accmp.co.in" class="nav__logo" data-aos="fade-down" data-aos-duration="2000">
             <img src="assets/images/acc_logo.png" alt="acc logo" width="110px"/>
         </a>
         
-        <div class="nav__btns">
+        <div class="nav__btns" data-aos="fade-down" data-aos-duration="2000">
             <!-- Theme change button -->
             <i class="uil uil-moon change-theme" id="theme-button"></i>
-<!-- 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
-            </div> -->
         </div>
     </nav>
   </header>
@@ -50,18 +49,20 @@
             <div class="home__content grid">
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/amity-coding-club-551080218/" target="_blank" class="home__social-icon">
-                        <i class="uil uil-linkedin-alt"></i>
+                        <i class="uil uil-linkedin-alt" data-aos="fade-right" data-aos-duration="2000"></i>
                     </a>
                     <a href="https://www.instagram.com/amitycoding/" target="_blank" class="home__social-icon">
-                        <i class="uil uil-instagram"></i>
+                        <i class="uil uil-instagram" data-aos="fade-right" data-aos-duration="2000"></i>
                     </a>
                     <a href="https://www.github.com/amitycodingclub" target="_blank" class="home__social-icon">
-                        <i class="uil uil-github-alt"></i>
+                        <i class="uil uil-github-alt" data-aos="fade-right" data-aos-duration="2000"></i>
                     </a>
                 </div>
 
                 <div class="home__img">
-                    <img src="./assets/images/home__img.svg" alt="student coding pic" />
+                    <img src="./assets/images/home__img.svg" alt="student coding pic" 
+                        data-aos="fade-left" data-aos-duration="2000"
+                    />
                 </div>
                 
                 <div class="home__data">
@@ -70,12 +71,14 @@
                     <p class="home__description">
                         We learn, We create, We grow
                     </p>
-                    <h2 class="home__subtitle">04<sup>th</sup> & 05<sup>th</sup> September</h2>
-                    <!-- <a href="#register" class="button button--flex">
+                    <p class="home__description">
+                        04<sup>th</sup> & 05<sup>th</sup> September
+                    </p>
+                    <a href="#register" class="home__button button button--flex">
                         Register Here <i class="uil uil-arrow-circle-right button__icon"></i>
-                    </a> -->
-                    <button data-tf-slider="k6izp60G" data-tf-width="550" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#6E57E0;font-size:18px;border-radius:10px;color:#fff;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Register</button><script src="//embed.typeform.com/next/embed.js"></script>
-
+                    </a>
+                    <!-- <button data-tf-slider="k6izp60G" data-tf-width="550" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#6E57E0;font-size:18px;border-radius:10px;color:#fff;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Register</button><script src="//embed.typeform.com/next/embed.js"></script>
+                      -->
                 </div>
             </div>
 
@@ -84,35 +87,32 @@
                     <div class="home__scroll-mouse">
                         <div class="home__scroll-scroller"></div>
                     </div>
-                    <!-- &nbsp;&nbsp;
-                    <span class="home__scroll-name">Scroll down</span> -->
-                    <!-- <i class="uil uil-arrow-down home__scroll-arrow"></i> -->
+                    &nbsp;&nbsp;
+                    <span class="home__scroll-name">Scroll down</span>
+                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
                 </a>
             </div>
         </div>
     </section>
  
     <!--==================== EVENT ====================-->
-    <section class="event section" id="event">
+    <section class="event section" id="event" data-aos="fade-down">
         <h2 class="section__title">Event</h2>
         <span class="section__subtitle">2021</span>
 
         <div class="event__container container grid">
-            <video class="event__video" controls autoplay muted>
+            <video class="event__video" data-aos="fade-right" controls autoplay muted>
                 <source src="./assets/video/ATF21video.mp4" type="video/mp4">
                 <!-- <source src="movie.ogg" type="video/ogg"> -->
                 Your browser does not support the video tag.
             </video>
 
-            <div class="event__data">
-                <p class="event__description">AmiTechFiesta is the grand and captivating event.
+            <div class="event__data" data-aos="fade-left">
+                <p class="event__description" data-aos="fade-up">AmiTechFiesta is the grand and captivating event.
                     It will foster your technical and logical reasoning skills.
-                    <br>
-                    <br>
-             
                 </p>
 
-                <div class="event__info">
+                <div class="event__info" data-aos="fade-up">
                     <div>
                         <span class="event__info-title">1700+</span>
                         <span class="event__info-name">Participants</span>
@@ -126,14 +126,14 @@
                     <!-- <div>
                         <span class="event__info-title">500+</span>
                         <span class="event__info-name">Events</span>
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
 
-                <div class="event__buttons">
-                    <!-- <a href="#form" class="button button--flex">
-                        Register Now <i class="uil uil-smile button__icon"></i>
-                    </a> -->
-                    <button data-tf-slider="k6izp60G" data-tf-width="550" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#6E57E0;font-size:18px;border-radius:10px;color:#fff;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Register &#128515</button><script src="//embed.typeform.com/next/embed.js"></script>
+                <div class="event__buttons" data-aos="fade-up">
+                    <a href="#rounds" class="button button--flex">
+                        Explore <i class="uil uil-angle-down button__icon"></i>
+                    </a>
+                  <!-- <button data-tf-slider="k6izp60G" data-tf-width="550" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#6E57E0;font-size:18px;border-radius:10px;color:#fff;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Register &#128515</button><script src="//embed.typeform.com/next/embed.js"></script> -->
                 </div>
             </div>
         </div>
@@ -144,8 +144,8 @@
         <h2 class="section__title"></h2>
         <span class="section__subtitle"></span>
 
-        <div>
-            <div class="container">
+        <div data-aos="fade-right">
+            <div class="container" data-aos="fade-up">
                 <div class="rounds__title" data-num="01">
                     <h3>Round</h3>
                 </div>
@@ -155,7 +155,7 @@
                     <img src="./assets/images/rounds/brain_hunt.svg" alt="Brain Hunt" class="rounds__img">
                 </div>
     
-                <div >
+                <div data-aos="fade-right">
                     <h1 class="rounds__heading">
                         Brain Hunt
                     </h1>
@@ -169,8 +169,8 @@
             </div>
         </div>
 
-        <div>
-            <div class="container">
+        <div data-aos="fade-left">
+            <div class="container" data-aos="fade-up">
                 <div class="rounds__title" data-num="02">
                     <h3>Round</h3>
                 </div>
@@ -180,12 +180,12 @@
                     <img src="./assets/images/about.png" alt="Mind Scribble" class="rounds__img">
                 </div>
     
-                <div >
+                <div data-aos="fade-left">
                     <h1 class="rounds__heading">
-                        Mind Scribble
+                        Brain Hunt
                     </h1>
                     <p class="rounds__description">
-                        "Learning must be sought with ardor and attended with diligence."
+                      "Learning must be sought with ardor and attended with diligence."
                         <br>
                          This round will tease you for brainstorming and it will upgrade your coginition.
                         <br><br>
@@ -195,8 +195,8 @@
             </div>
         </div>
 
-        <div>
-            <div class="container">
+        <div data-aos="fade-right">
+            <div class="container" data-aos="fade-up">
                 <div class="rounds__title" data-num="03">
                     <h3>Round</h3>
                 </div>
@@ -206,14 +206,14 @@
                     <img src="./assets/images/rounds/code_a_thon.jpg" alt="Code-A-Thon" class="rounds__img">
                 </div>
     
-                <div >
+                <div data-aos="fade-right">
                     <h1 class="rounds__heading">
-                        Code-A-Thon
+                        Brain Hunt
                     </h1>
                     <p class="rounds__description">
                         It will help you to project your ideation proficiency and uplift your problem solving skills.
                         <br><br>
-                        Solve the real world problems to become <br><strong><i><q>The&nbsp;Best&nbsp;Programmer&nbsp;of&nbsp;the&nbsp;Year</q></i></strong>.
+                        An MCQ based round to test your skills to find bugs and basic coding related questions.
                     </p>
                 </div>
             </div>
@@ -222,69 +222,50 @@
     </section>
 
     <!--==================== TESTIMONIAL ====================-->
-    <section class="testimonial section">
+    <section class="testimonial section" data-aos="fade-down">
 
         <h2 class="section__title">Testimonials</h2>
         <span class="section__subtitle"></span>
 
-        <div class="testimonial__container container swiper-container">
+        <div class="testimonial__container container swiper-container" data-aos="fade-up">
             <div class="swiper-wrapper">
                 <!--==================== TESTIMONIAL 1 ====================-->
-                <div class="testimonial__content swiper-slide">
-                    <div class="testimonial__data">
-                        <div class="testimonial__header">
-                            <img src="./assets/images/testimonial/testimonial1.png" alt="" class="testimonial__img">
-                            
-                            <div>
-                                <h3 class="testimonial__name">Dr. SC Jain</h3>
-                                <span class="testimonial__client">Head of Institution</span>
-                            </div>
-                        </div>
+                <div class="testimonial__data swiper-slide">
+                    <div class="testimonial__content">
+                        <img src="./assets/images/testimonial/testimonial3.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Dr. SC Jain</h3>
+                        <span class="testimonial__client">Head of Institution</span>
+                        <p class="testimonial__description">I want to put an end to that recurring nightmare, 
+                            right now. There are those who would get in my way. But I'm fine playing the role 
+                            of the lunatic who kills people like that.
+                        </p>
                     </div>
-
-                    <p class="testimonial__description">I live my life a quarter-mile at a time. Nothing else 
-                        matters; not the mortgage; not the store; not my team and their bullshit. For those 10 
-                        seconds or less, I’m free.
-                    </p>
                 </div>
                 <!--==================== TESTIMONIAL 2 ====================-->
-                <div class="testimonial__content swiper-slide">
-                    <div class="testimonial__data">
-                        <div class="testimonial__header">
-                            <img src="./assets/images/testimonial/testimonial2.png" alt="" class="testimonial__img">
-                            
-                            <div>
-                                <h3 class="testimonial__name">Dr. Venkatadri Marriboyina</h3>
-                                <span class="testimonial__client">Head of Department, CSE, AUMP</span>
-                            </div>
-                        </div>
+                <div class="testimonial__data swiper-slide">
+                    <div class="testimonial__content">
+                        <img src="./assets/images/testimonial/testimonial3.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Dr. Venkatadri Marriboyina</h3>
+                        <span class="testimonial__client">Head of Department, CSE, AUMP</span>
+                        <p class="testimonial__description">I want to put an end to that recurring nightmare, 
+                            right now. There are those who would get in my way. But I'm fine playing the role 
+                            of the lunatic who kills people like that.
+                        </p>
                     </div>
-
-                    <p class="testimonial__description">My head's... Gotten all messed up... The Founder's power 
-                        has made it so that there's no past or future... It all exists at once. So... I had to do 
-                        it...
-                    </p>
                 </div>
                 <!--==================== TESTIMONIAL 3 ====================-->
-                <div class="testimonial__content swiper-slide">
-                    <div class="testimonial__data">
-                        <div class="testimonial__header">
-                            <img src="./assets/images/testimonial/testimonial3.png" alt="" class="testimonial__img">
-                            
-                            <div>
-                                <h3 class="testimonial__name">Dr. Dinesh Sharma</h3>
-                                <span class="testimonial__client">Secretory  at ACC</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="testimonial__description">I want to put an end to that recurring nightmare, 
+                <div class="testimonial__data swiper-slide">
+                    <div class="testimonial__content">
+                        <img src="./assets/images/testimonial/testimonial3.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Dr. Dinesh Sharma</h3>
+                        <span class="testimonial__client">Secretory  at ACC</span>
+                        <p class="testimonial__description">I want to put an end to that recurring nightmare, 
                         right now. There are those who would get in my way. But I'm fine playing the role 
                         of the lunatic who kills people like that.
-                    </p>
-                </div>
+                        </p>
+                
                 <!--==================== TESTIMONIAL 4 ====================-->
-                <div class="testimonial__content swiper-slide">
+<!--                 <div class="testimonial__content swiper-slide">
                     <div class="testimonial__data">
                         <div class="testimonial__header">
                             <img src="./assets/images/testimonial/testimonial3.png" alt="" class="testimonial__img">
@@ -311,14 +292,9 @@
                                 <h3 class="testimonial__name">Dr. Madhavi Dhingra</h3>
                                 <span class="testimonial__client">Coordinator at ACC</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-
-                    <p class="testimonial__description">I want to put an end to that recurring nightmare, 
-                        right now. There are those who would get in my way. But I'm fine playing the role 
-                        of the lunatic who kills people like that.
-                    </p>
-                </div> 
+                </div>
             </div>
 
             <!--Add pagination-->
@@ -327,12 +303,12 @@
     </section>
 
     <!--==================== SPONSORS ====================-->
-    <section class="sponsors section">
+    <section class="sponsors section" data-aos="fade-down">
 
         <h2 class="section__title">Our Sponsors</h2>
         <span class="section__subtitle"></span>
 
-        <div class="sponsors__container container swiper-container">
+        <div class="sponsors__container container swiper-container" data-aos="fade-up">
             <div class="swiper-wrapper">
                 <!--==================== SPONSOR 1 ====================-->
                 <div class="sponsors__content swiper-slide">
@@ -368,12 +344,14 @@
     <!--==================== FOOTER ====================-->
     <footer class="footer">
         <div class="footer__container container grid">
-            <div><center>
+            <p class="footer__title">Made with <svg viewBox="0 0 1792 1792" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="height: 0.8rem;"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" fill="#db2929"></path></svg> by 
+                <a href="https://www.accmp.co.in">ACC Team.</a>
+<!--             <div><center>
                 Contact us:<a href="mailto:help@accmp.co.in" style="color: rgb(219, 216, 216);"> help@accmp.co.in</a>
             </center>
             </div>
             <p class="footer__title">Made with <span>❤</span> by 
-                <a href="https://www.accmp.co.in">&copyACC</a>
+                <a href="https://www.accmp.co.in">&copyACC</a> -->
             </p>
             <br>
         </div>
@@ -386,6 +364,12 @@
     
     <!--==================== SWIPER JS ====================-->
     <script src="../src/lib/swiper-bundle.min.js"></script>
+
+    <!--==================== GSAP JS ====================-->
+    <script src="../src/lib/gsap.min.js"></script>
+
+    <!--==================== AOS JS ====================-->
+    <script src="../src/lib/aos.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="../src/lib/main.js"></script>
