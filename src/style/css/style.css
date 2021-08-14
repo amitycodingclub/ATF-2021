@@ -853,11 +853,12 @@ img {
   }
 
   .home__scroll {
-    display: block;
+    display: inline;
+    cursor: pointer;
   }
 
   .home__scroll-button {
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 
   .event__container {
