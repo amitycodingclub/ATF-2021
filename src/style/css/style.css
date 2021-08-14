@@ -656,7 +656,10 @@ img {
 /*==================== FOOTER ====================*/
 .footer {
     padding: 1rem;
+}
 
+.footer__container {
+  row-gap: 3.5rem;
 }
 
 .footer__title {
@@ -784,6 +787,10 @@ img {
   .rounds__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -810,7 +817,8 @@ img {
   }
 
   .header,
-  .main {
+  .main,
+  .footer__container {
     padding: 0 1rem;
   }
 
@@ -881,6 +889,10 @@ img {
   .event__buttons {
     justify-content: initial;
   }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* For large devices */
@@ -888,6 +900,7 @@ img {
   .header,
   .main,
   .footer__container {
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
   }
 
