@@ -482,13 +482,13 @@ img {
 
 
 .event__description {
-  text-align: center;
   margin-bottom: var(--mb-2-5);
 }
 
 .event__info {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -871,11 +871,11 @@ img {
   }
 
   .event__description {
-    text-align: initial;
+    text-align: center;
   }
 
   .event__info {
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .event__buttons {
