@@ -103,19 +103,5 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-// /*==================== GSAP REVEAL ANIMATION ====================*/
-// gsap.from('.home__img', {opacity: 0, duration: 2, delay: .6, x:100})
-// gsap.from('.home__data', {opacity: 0, duration: 2, delay: .8, y:25})
-// gsap.from('.home__title , .home__data h2, .home__description, .home__button', {opacity: 0, duration: 2, delay: 1, y:25, ease: 'expo.out', stagger: 0.2})
-// gsap.from('.nav__logo , .nav__btns', {opacity: 0, duration: 2, delay: 1.5, y:25, ease: 'expo.out', stagger: 0.2})
-// gsap.from('.home__social-icon', {opacity: 0, duration: 2, delay: 2.3, y:25, ease: 'expo.out', stagger: 0.2})
-
 // /*==================== AOS ANIMATION ====================*/
-AOS.init( {
-    offset: 100,
-    duration: 600,
-    easing: 'ease-in-out',
-    delay: 300,
-    // once: true,
-    disable: 'mobile'
-});
+AOS.init();
