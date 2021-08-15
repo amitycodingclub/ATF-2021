@@ -789,6 +789,11 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .event__video {
+    width: 100%;
+    height: auto;
+  }
+
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
   }
