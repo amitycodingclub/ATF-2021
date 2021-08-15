@@ -40,8 +40,11 @@ var swiperTestimonial = new Swiper(".sponsors__container", {
     },
     speed: 1000,
     breakpoints: {
-        568: {
+        350: {
             slidesPerView: 3,
+        },
+        568: {
+            slidesPerView: 4,
         },
         1024: {
             slidesPerView: 4,
