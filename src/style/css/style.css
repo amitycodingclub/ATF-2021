@@ -22,6 +22,7 @@
     --container-color: #fff;
     --scrooll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scrooll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --scrollup-color: hsl(var(--hue-color), 30%, 8%);
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
@@ -87,6 +88,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scrooll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scrooll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --scrollup-color: hsl(var(--hue-color), 8%, 95%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -561,12 +563,8 @@ img {
 
 /*==================== TESTIMONIAL ====================*/
 .testimonial__content {
-    background-color: var(--first-color-second);
-    color: var(--first-color-lighter);
-    border-radius: 0.5rem;
     padding: 2rem 1rem;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     transform: scale(0.85);
 }
 
@@ -589,6 +587,7 @@ img {
 
 .testimonial__description {
     margin-top: var(--mb-1);
+    text-align: justify;
 }
 
 .swiper-wrapper {
@@ -665,13 +664,13 @@ img {
 }
 
 .scrollup:hover {
-  background-color: var(--body-color);
-  border: 1px solid var(--first-color-alt);
+  background-color: transparent;
+  border: 2px solid var(--first-color);
 }
 
 .scrollup__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--scrollup-color);
 }
 
 /* Show scroll */
