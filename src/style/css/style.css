@@ -350,7 +350,7 @@ img {
 
 .home__scroll-button {
   position: absolute;
-  color: var(--first-color);
+  color: var(--text-color-light);
   transition: 0.3s;
 }
 
@@ -419,6 +419,7 @@ img {
 
 .button:hover {
   background-color: transparent;
+  color: var(--text-color);
   border: 2px solid var(--first-color-alt);
 }
 
@@ -431,30 +432,6 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
-}
-
-.button--small {
-  padding: 0.75rem 1rem;
-}
-
-.button--link {
-  padding: 0;
-  background-color: transparent;
-  color: var(--first-color);
-}
-
-.button--link:hover {
-  background-color: transparent;
-  color: var(--first-color-alt);
-}
-
-.button--white {
-  background-color: #fff;
-  color: var(--first-color);
-}
-
-.button--white:hover {
-  background-color: #fff;
 }
 
 /*==================== EVENT ====================*/
