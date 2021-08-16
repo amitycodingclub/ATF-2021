@@ -109,5 +109,5 @@ themeButton.addEventListener("click", () => {
 // /*==================== AOS ANIMATION ====================*/
 AOS.init({
     duration: "2000",
-    delay: "600",
+    delay: "100",
 });
