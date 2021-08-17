@@ -872,17 +872,22 @@ img {
   }
 
   .footer__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
   .header,
-  .main,
-  .footer__container {
+  .main {
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
+  }
+
+  .footer__container {
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .home__blob {
