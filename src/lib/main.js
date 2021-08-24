@@ -47,7 +47,7 @@ var swiperTestimonial = new Swiper(".sponsors__container", {
             slidesPerView: 4,
         },
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         }
     },
 });
