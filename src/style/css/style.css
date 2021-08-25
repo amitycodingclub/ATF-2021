@@ -558,14 +558,15 @@ img {
 }
 
 .perks__content {
-  background-color: var(--container-color);
+  /*background-color: var(--container-color); */
   padding: 2rem 1rem;
   text-align: center;
   overflow: hidden;
   width: 250px;
-  height: auto;
+  height: 200px;
+  text-align: center;
   border-radius: 0.5rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
   transition: .3s;
 }
 
@@ -586,14 +587,14 @@ justify-self: center;
 }
 
 .perks__client {
-font-size: var(--small-font-size);
-color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
 }
 
 .perks__description {
   font-size: var(--h3-font-size);
   margin-top: var(--mb-1);
-  text-align: justify;
+  vertical-align: middle;
 }
 
 /*==================== TESTIMONIAL ====================*/
