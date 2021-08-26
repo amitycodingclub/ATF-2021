@@ -638,6 +638,7 @@ justify-self: center;
 .sponsors__img {
     width: auto;
     max-height: 150px;
+    background-color: #fff;
 }
 
 .sponsors__data,
