@@ -44,10 +44,10 @@ var swiperTestimonial = new Swiper(".sponsors__container", {
             slidesPerView: 3,
         },
         568: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         }
     },
 });
